@@ -3,7 +3,7 @@
 ## Introduction
 Cycle GANS are a special variation of GANs, which main objective focuses on the translation from one domain to another. For example, one can consider a set of images from a winter season in contrast with a summer ones. In this case, the domains are represented by the intrinsic characteristics of each type of image: winter vs summer, where each one have unique features: light intensity, sky color, snow, etc.; which differentiate them.
 
-As such, a CycleGAN allow us to transform (translate) from one domain X to another Y. In order to achieve this translation, CycleGAN add more components over the vanilla GAN. Among them, we have the cycle loss, which assures the consistency when translation from one domain to another. Also, since we want to learn to map from two different domains, a pair of two generators (_Gx_, _Gy_) and discriminators (_Dx_, _Dy_) are been used. This in contrast with a GAN model, which usually have only one generator and discriminator.
+As such, a CycleGAN allow us to transform (translate) from one domain X to another Y. In order to achieve this translation, CycleGAN add a component called: cycle loss, which assures the consistency when translation from one domain to another. Also, since we want to learn to map from two different domains, a pair of two generators (_Gx_, _Gy_) and discriminators (_Dx_, _Dy_) are been used. This, in contrast with a GAN model, which usually have only one generator and discriminator.
 
 In this repository a CycleGAN was implemented to translate from human faces to cartoon ones, and vise versa. The project was developed mainly in pytorch.
 
