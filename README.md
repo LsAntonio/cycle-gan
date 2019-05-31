@@ -76,7 +76,7 @@ Once trained, this model is used to generate images from both domains. For examp
  
 Conversely, in the __Figure 7__, we see the inverse process. Here an image from the Y domain is been converted into the X domain. As we had seen before, the generated human faces have components from the human face.
 
-![](./plots/figure_6.png)
+![](./plots/figure_7.png)
 
 Observing both transformed images, we can see that the model is more accurate when translating cartoon faces into human ones.
 
