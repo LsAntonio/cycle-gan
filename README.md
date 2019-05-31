@@ -17,7 +17,7 @@ Individually, each generator is composed by: three convolutional blocks, which a
 ## Data sets
 Also, the data sets used correspond to faces from the celebrities (celebA) and cartoons (anime) data sets. However, these data sets had been modified. For example, in the celebA, the images were resized to 64 x 64. Also, from both data sets, a random subset has been taken. This correspond to 3,188 images for the celebA data set and 3,283 for the anime data set. In the __Figure 2__ we can see the some images corresponding to each data set. Here, the X domain represent the human faces and the Y domain, the cartoon ones.
 
-
+![](./plots/figure_2.png)
 
 ## Training Results:
 The model was trained for 3000 epochs. During each epoch, the best model was selected, using as metric the accumulated losses from the generators. As we can see in the __Figure 3__, in the first 1000 iterations the model was gradually learning to map between the X and Y domains. 
