@@ -83,7 +83,11 @@ Observing both transformed images, we can see that the model is more accurate wh
 ## Demo
 In this demo the model is used to transform human faces into cartoon ones and vise versa.
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/dgkbH54EXSU/0.jpg)](https://www.youtube.com/watch?v=dgkbH54EXSU)
+<p align="center">
+<a href="https://www.youtube.com/watch?v=dgkbH54EXSU" target="_blank">
+  <img src="https://img.youtube.com/vi/dgkbH54EXSU/0.jpg" alt="Demo" width = "500", height = "350">
+</a>
+</p>
 
 ## Conclusions
 In this repository, I have trained a CycleGAN model to translate images from human faces to cartoon images and vise versa. As have seen before in the __Results__ and  __Demo__ sections, this model is capable of generate images from both trained domains.
