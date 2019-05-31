@@ -17,7 +17,7 @@ Individually, each generator is composed by: three convolutional blocks, which a
 ## Data sets
 Also, the data sets used correspond to faces from the celebrities (celebA) and cartoons (anime) data sets. However, these data sets had been modified. For example, in the celebA, the images were resized to 64 x 64. Also, from both data sets, a random subset has been taken. This correspond to 3,188 images for the celebA data set and 3,283 for the anime data set. In the __Figure 2__ we can see the some images corresponding to each data set. Here, the X domain represent the human faces and the Y domain, the cartoon ones.
 
-![](./plots/figure_2.png)
+
 
 ## Training Results:
 The model was trained for 3000 epochs. During each epoch, the best model was selected, using as metric the accumulated losses from the generators. As we can see in the __Figure 3__, in the first 1000 iterations the model was gradually learning to map between the X and Y domains. 
@@ -31,6 +31,7 @@ Meanwhile, as we can appreciate in __Figure 4__; after 3000 epochs, the generato
 Also, in the __Figure 5__, we can observe how the losses were evolving during the training process. As expected from this type of models, the losses have some variations. For example, at the 1200 iteration, the generators drastically decrease their losses, meanwhile the Dy discriminator increase. Also, this plot suggest that more iterations would result in no improving for the generators. This was empirically checked with more experiments, were more iterations were added. However, this not improved the quality of the generated images by _Gx_ or _Gy_.
 
 ![](./plots/figure_5.svg)
+__Figure 5:__ _CycleGAN training losses._
 
 ## Installation
 This project was developed in Ubuntu 19.04, therefore it is most likely to be compatible with other Ubuntu versions such as: 16.04 +. If you use other OS, you could need to adjust some configurations. First, download or clone this repository. Then create a virtual environment. You can use python native environment manager or conda environments. Once you created the environment, make sure to install the following dependencies:
@@ -41,7 +42,7 @@ This project was developed in Ubuntu 19.04, therefore it is most likely to be co
 * matplotlib=3.0.3
 * python=3.7.2
 
-Next, you need to download the trained model. You can download them from __here__. Make sure to put this file inside a folder called __model__, at the same level of the repository.
+Next, you need to download the trained model. You can download them from __here__. Make sure to put this file inside the /model/ folder.
 
 ## Running
 To run the project, make sure to have the images you want to convert in the images/inputs folder. This repository include some images you can use. If you use your own images, make sure to select the face areas. Also, you need to input an image with a single face. For better results, I suggest to resize the human faces to 64 x 64. This step is not necessary for the cartoon images. You can use jpg and png images.
