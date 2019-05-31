@@ -35,6 +35,7 @@ __Figure 5:__ _CycleGAN training losses._
 
 ## Installation
 This project was developed in Ubuntu 19.04, therefore it is most likely to be compatible with other Ubuntu versions such as: 16.04 +. If you use other OS, you could need to adjust some configurations. First, download or clone this repository. Then create a virtual environment. You can use python native environment manager or conda environments. Once you created the environment, make sure to install the following dependencies:
+
 * torchvision==0.2.2
 * pytorch-cpu=1.1.0 (if you have a GPU, then install the GPU version)
 * numpy==1.16.2
@@ -42,7 +43,7 @@ This project was developed in Ubuntu 19.04, therefore it is most likely to be co
 * matplotlib=3.0.3
 * python=3.7.2
 
-Next, you need to download the trained model. You can download them from __here__. Make sure to put this file inside the /model/ folder.
+Next, you need to download the trained model. You can download them from [here](https://drive.google.com/open?id=13sMIG4sVmM-8zvAvM-ByuJu2uatE3Pa7). Make sure to unzip this file inside the /model/ folder.
 
 ## Running
 To run the project, make sure to have the images you want to convert in the images/inputs folder. This repository include some images you can use. If you use your own images, make sure to select the face areas. Also, you need to input an image with a single face. For better results, I suggest to resize the human faces to 64 x 64. This step is not necessary for the cartoon images. You can use jpg and png images.
