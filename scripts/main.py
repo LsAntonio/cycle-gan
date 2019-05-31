@@ -21,9 +21,6 @@ parser.add_argument('-c', '--convert', type = str, default = 'human', help = 'In
 parser.add_argument('-f', '--filenames', type = str, default = 'image', help = 'Save name used for the resulting images (comparison and new image). If ignored, the default files will be image_comparison.svg and image_result.svg')
 arg = parser.parse_args()
 
-# X: human
-# Y: cartoon
-
 ####################
 # Program Functions#
 ####################
