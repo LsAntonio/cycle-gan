@@ -68,3 +68,20 @@ Finally, you can access the command list using __python main.py -h__. A more det
 * -c: This represent the type of conversion. The allowed values are: ‘human’ and ‘cartoon’.
 
 * -f: Name of the result images. If you ignore this parameter, the resulting images will have the names: image_comparison and image_result as default. The images will be saved in the images/outputs folder.
+
+## Results
+Once trained, this model is used to generate images from both domains. For example, in the __Figure 6__, we can see a human face image from the X domain, which is translated into a cartoon image, from the Y domain. In this case we observe that the generated cartoon image have components from the Y domain.
+
+![](./plots/figure_6.png)
+ 
+Conversely, in the __Figure 7__, we see the inverse process. Here an image from the Y domain is been converted into the X domain. As we had seen before, the generated human faces have components from the human face.
+
+![](./plots/figure_6.png)
+
+Observing both transformed images, we can see that the model is more accurate when translating cartoon faces into human ones.
+
+## Demo
+In this demo the model is used to transform human faces into cartoon ones and vise versa.
+
+## Conclusions
+In this repository, I have trained a CycleGAN model to translate images from human faces to cartoon images and vise versa. As have seen before in the __Results__ and  __Demo__ sections, this model is capable of generate images from both trained domains.
